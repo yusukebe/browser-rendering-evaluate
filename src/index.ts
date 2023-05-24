@@ -47,7 +47,7 @@ app.get('/', (c) => {
   return c.html(html`<html>
     <body>
       <ul>
-      <li><a href="/evaluate">/evaluate (HTMLから<code>head</code>タグを除去します)</li>
+      <li><a href="/evaluate">/evaluate (HTMLから<code>head</code>タグを除去したテキストをJSONで返します)</li>
       <li><a href="/static/page.html">/static/page.html (対象のHTMLです)</li>
       </ul>
     </body>
