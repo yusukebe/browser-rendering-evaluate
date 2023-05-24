@@ -21,8 +21,6 @@ app.use('*', async (c, next) => {
 app.get('/evaluate', async (c) => {
   const url = new URL('/static/page.html', c.req.url).toString()
 
-  console.log(url)
-
   const browser = await puppeteer.launch(c.env.MY_BROWSER)
   const page = await browser.newPage()
 
